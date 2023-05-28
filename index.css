@@ -1,0 +1,195 @@
+html, body {
+    margin: 0;
+    overflow-x: hidden;
+    /* background: linear-gradient(-45deg, #000000, #041832, #021f2c, #0d1736);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite; */
+}
+
+/* @keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+} */
+
+
+.navbar {
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: max(50px, 8vh);
+    background-color: #000000;
+}
+
+.navbar > ul {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar > ul > li {
+    width: 100%;
+
+    font-size: 1vmax;
+    font-family: 'Lato', sans-serif;
+    align-items: center;
+}
+
+.navbar > ul > li > a {
+    width: 100%;
+
+    display: block;
+    text-align: center;
+
+    color: #ffffff;
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+.navbar > ul > li::marker {
+    content: "";
+}
+
+.section > h2 {
+    text-align: center;
+}
+
+.section.home {
+    height: calc(100vh - max(50px, 8vh));
+}
+
+.section.home > video.background {
+    position: absolute;
+    top: max(50px, 8vh);
+
+    width: 100%;
+    height: calc(100vh - max(50px, 8vh));
+
+    object-fit: cover;
+}
+
+.section.home > h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+
+    text-align: center;
+    font-size: 12vmax;
+    font-family: 'Lato', sans-serif;
+}
+
+.section.importance-intersectionality {
+    height: calc(100vh - max(50px, 8vh));
+    padding: 20px;
+    background-color: rgb(12, 33, 43)
+}
+
+.section.importance-intersectionality > .grid {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    max-width: 1550px;
+    height: 100%;
+    max-height: 750px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+}
+
+.section.importance-intersectionality > .grid > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: #000000 solid 1px;
+    border-radius: 25px;
+    background-color: #ffffff;
+
+    clip-path: inset(0% 0% 0% 0% round 25px);
+
+    background-size: cover;
+    background-position: center;
+}
+
+.section.importance-intersectionality > .grid > .intersectionality {
+    background-image: url('./assets/flood.webp');
+}
+
+.section.importance-intersectionality .grid > div > * {
+    position: absolute;
+    height: 100%;
+    width: calc(50% - 25px);
+    border-radius: 25px;
+}
+
+.section.importance-intersectionality > .grid > div > .title-background {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.section.importance-intersectionality > .grid > div > .title-background > h2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: #ffffff;
+
+    font-size: 80px;
+    font-family: 'Lato', sans-serif;
+}
+
+.section.importance-intersectionality > .grid > div > .title-background > .cursor {
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    transform: translateX(-50%);
+}
+
+.section.importance-intersectionality > .grid > div > .text-background {
+    transform: translateX(100%);
+    background-color: #ffffff;
+    transition: transform 250ms;
+}
+
+.section.importance-intersectionality > .grid > div > .text-background > p {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px;
+    margin: 0;
+
+    font-size: 1.2vmax;
+    font-family: 'Lato', sans-serif;
+}
+
+.section.importance-intersectionality > .grid > div:hover > .text-background {
+    transform: translateX(0);
+}
+
+.section.tips {
+    background-color: rgb(21, 59, 77)
+}
+
+.section.works {
+    background-color: rgb(12, 33, 43)
+}
