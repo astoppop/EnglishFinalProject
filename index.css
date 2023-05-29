@@ -125,7 +125,6 @@ body::-webkit-scrollbar {
 
 .section.importance-intersectionality {
     height: calc(100vh - max(50px, 8vh));
-    padding: 20px;
     background-color: rgb(12, 33, 43);
 }
 
@@ -135,9 +134,9 @@ body::-webkit-scrollbar {
     top: 50%;
     transform: translate(-50%, -50%);
 
-    max-width: 1550px;
+    max-width: 1350px;
     height: 100%;
-    max-height: 750px;
+    max-height: 650px;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
