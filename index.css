@@ -6,7 +6,7 @@ html, body {
     animation: gradientAnimation 10s ease infinite; */
 }
 
-/* @keyframes gradientAnimation {
+ /* @keyframes gradientAnimation {
     0% {
         background-position: 0% 50%;
     }
@@ -15,10 +15,22 @@ html, body {
     }
     100% {
         background-position: 0% 50%;
-    }
-} */
+    } */
 
 
+body::-webkit-scrollbar {
+    width: 12px; 
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(1, 2, 44);        
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgba(181, 181, 222, 0.589);    
+    border-radius: 20px;       
+    border: 3px solid rgba(2, 1, 44, 0.564); 
+  }
 .navbar {
     z-index: 9999;
     position: fixed;
@@ -80,25 +92,41 @@ html, body {
     width: 100%;
     height: calc(100vh - max(50px, 8vh));
 
+    filter: brightness(140%);
     object-fit: cover;
 }
 
-.section.home > h1 {
+.section.home > .text {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    margin: 0;
+    padding: 20px;
 
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    border: #ffffff solid 1px;
+    border-radius: 25px;
+
+    color: #ffffff;
     text-align: center;
-    font-size: 12vmax;
     font-family: 'Lato', sans-serif;
+}
+
+.section.home > .text > h1 {
+    margin: 0;
+    font-size: 12vmax;
+}
+
+.section.home > .text > p{
+    margin: 0;
+    font-size: 1vmax;
 }
 
 .section.importance-intersectionality {
     height: calc(100vh - max(50px, 8vh));
     padding: 20px;
-    background-color: rgb(12, 33, 43)
+    background-color: rgb(12, 33, 43);
 }
 
 .section.importance-intersectionality > .grid {
@@ -154,7 +182,7 @@ html, body {
     margin: 0;
     color: #ffffff;
 
-    font-size: 80px;
+    font-size: 4vmax;
     font-family: 'Lato', sans-serif;
 }
 
@@ -187,9 +215,43 @@ html, body {
 }
 
 .section.tips {
+    padding: 50px 20px;
     background-color: rgb(21, 59, 77)
+}
+
+.section.tips > h2 {
+    margin: 10px;
+    color: #ffffff;
+    font-size: 5vmax;
+    font-family: 'Lato', sans-serif;
+}
+
+.section.tips > .grid {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.section.tips > .grid > .card {
+    padding: 25px;
+    border-left: #ffffff solid 1px;
+    border-bottom: #ffffff solid 1px;
+}
+
+.section.tips > .grid > .card > h3 {
+    color: #ffffff;
+    font-size: 2vmax;
+    font-family: 'Lato', sans-serif;
+}
+
+.section.tips > .grid > .card > p {
+    color: #ffffff;
+    font-size: 1.5vmax;
+    font-family: 'Lato', sans-serif;
 }
 
 .section.works {
     background-color: rgb(12, 33, 43)
 }
+

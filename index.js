@@ -1,6 +1,5 @@
 const scrollTo = (element) => {
     $('html, body').animate({ scrollTop: element.offset().top - $('.filler').height() }, 500);
-    // console.log(element.height);
 }
 
 $('.links li .home').click(() => { scrollTo($('.section.home')); });
