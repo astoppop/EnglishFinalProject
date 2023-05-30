@@ -143,9 +143,10 @@ body::-webkit-scrollbar-thumb {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-
+    
+    width: 80vw;
     max-width: 1350px;
-    height: 100%;
+    height: 80vh;
     max-height: 650px;
 
     display: grid;
