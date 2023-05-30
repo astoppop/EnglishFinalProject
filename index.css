@@ -133,7 +133,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .section.importance-intersectionality {
-    height: calc(100vh - max(50px, 8vh));
+    min-height: calc(100vh - max(50px, 8vh));
     background-color: rgb(12, 33, 43);
 }
 
