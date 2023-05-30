@@ -91,6 +91,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .section.home {
+    width: 100%;
     height: calc(100vh - max(50px, 8vh));
 }
 
