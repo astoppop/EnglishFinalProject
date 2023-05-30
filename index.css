@@ -167,6 +167,10 @@ body::-webkit-scrollbar-thumb {
     background-position: center;
 }
 
+.section.importance-intersectionality > .grid > .importance {
+    background-image: url('./assets/brrr.jfif');
+}
+
 .section.importance-intersectionality > .grid > .intersectionality {
     background-image: url('./assets/flood.webp');
 }
@@ -290,4 +294,8 @@ body::-webkit-scrollbar-thumb {
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
+}
+
+.section.works > .grid > .card > a {
+    color: #ffffff;
 }
